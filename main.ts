@@ -5,10 +5,10 @@ const INPUT_DIR = process.env.MAKEFUN_INPUT_DIR ?? '/input';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 const LEVELS = [0.05, 0.25, 0.5, 0.75, 0.95];
 const HISTORY = 2_880;
-const MOVE_SCALE = 0.45;
+const MOVE_SCALE = 0.4;
 const SAMPLE_STRIDE_DIVISOR = 4;
 const VOLATILITY_WINDOW = 120;
-const VOLATILITY_EXPONENT = 0.35;
+const VOLATILITY_EXPONENT = 0.25;
 
 type Market = { id: string; prices: number[] };
 type ForecastCase = { horizon_minutes: number; quantiles: number[]; markets: Market[] };
